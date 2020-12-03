@@ -4,6 +4,7 @@ numbers = list(map(lambda str: int(str), lines))
 n = len(numbers)
 found_pair = False;
 found_triplet = False;
+
 for i in range (n - 1):
     if found_pair:
         break
@@ -11,6 +12,7 @@ for i in range (n - 1):
         if (numbers[i] + numbers[j] == 2020):
             print(numbers[i] * numbers[j])
             found_pair = True;
+            
 for i in range (n - 2):
     if found_triplet:
         break
