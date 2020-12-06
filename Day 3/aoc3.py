@@ -11,13 +11,13 @@ for i in range(1, line_count):
     if line[-1] == '\n':
         line = line[:n - 1]
     while len(line) - 1 <= start_col:
-       line *= 2;
+       line *= 2
     lines[i] = line
     if line[start_col] == '#':
         trees += 1
     start_col += 3
 
-print(trees)
+print(f"First part: {trees}")
 
 for k in range(1, 8, 2):
     start_col = k
@@ -26,7 +26,7 @@ for k in range(1, 8, 2):
         line = lines[i]
         n = len(line)
         while len(line) - 1 <= start_col:
-            line *= 2;
+            line *= 2
         if line[start_col] == '#':
             trees += 1
         start_col += k
@@ -42,4 +42,4 @@ for i in range(2, line_count, 2):
     start_col += 1
 total_trees *= trees
 
-print(total_trees)
+print(f"Second part: {total_trees}")

@@ -21,7 +21,7 @@ for group in groups:
             answered[ord(answer) - ord('a')] = True
     total_answers += len(list(filter(lambda x: x, answered)))
 
-print(total_answers)
+print(f"First part: {total_answers}")
 
 for group in groups:
     answered = [False] * 27
@@ -36,4 +36,4 @@ for group in groups:
                 answered[ord(answer) - ord('a')] = False
     unanimous_answers += len(list(filter(lambda x: x, answered)))
 
-print(unanimous_answers)
+print(f"Second part: {unanimous_answers}")

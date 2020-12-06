@@ -30,9 +30,10 @@ for line in lines:
         highestId = currentId
     seats.append(currentId)
 
-print(highestId)
+print(f"Firts part: {highestId}")
 seats.sort()
 lowestId = seats[0]
+
 for num in range(lowestId, highestId):
     if not num in seats:
-        print(num)
+        print(f"Second part: {num}")

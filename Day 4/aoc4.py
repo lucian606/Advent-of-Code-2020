@@ -90,10 +90,10 @@ for line in lines:
         valid_passports += 1
         passports.append(passport)
 
-print(valid_passports)
+print(f"First part: {valid_passports}")
 
 for passport in passports:
     if checkYear(passport['byr'], 1920, 2002) and checkYear(passport['iyr'], 2010, 2020) and checkYear(passport['eyr'], 2020, 2030) and checkHgt(passport['hgt']) and checkHcl(passport['hcl']) and checkEcl(passport['ecl']) and checkPid(passport['pid']):
         corrert_passports += 1
 
-print(corrert_passports)
+print(f"Second part: {corrert_passports}")

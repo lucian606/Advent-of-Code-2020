@@ -17,7 +17,7 @@ for line in lines:
     if occurences >= lower_bound and occurences <= upper_bound:
         valid_passwords += 1
 
-print(valid_passwords)
+print(f"First part: {valid_passwords}")
 
 for line in lines:
     args = line.split(" ")
@@ -30,4 +30,4 @@ for line in lines:
     if xor(password[first_index] == chr, password[second_index] == chr):
         new_valid_passwords += 1
 
-print(new_valid_passwords)
+print(f"Second part: {new_valid_passwords}")
