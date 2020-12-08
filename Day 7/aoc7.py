@@ -2,7 +2,6 @@ class Graph:
 
     def __init__(self):
         self.adjList = []
-        self.visited = []
 
     def __str__(self):
         displayStr = ""
@@ -15,7 +14,6 @@ class Graph:
 
     def addNode(self):
         self.adjList.append([])
-        self.visited.append(False)
 
     def BFS(self, start, target):
         q = []
@@ -34,7 +32,6 @@ class Graph:
 
     def DFS(self, start):
         bag_count = 0
-        self.visited[start] = True
         for (dest, cost) in self.adjList[start]:
             bag_count = bag_count + cost + cost * self.DFS(dest)        
         return bag_count
