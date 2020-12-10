@@ -43,3 +43,4 @@ for i in range(2, line_count, 2):
 total_trees *= trees
 
 print(f"Second part: {total_trees}")
+input_file.close()

@@ -87,3 +87,4 @@ for i in range(len(bags)):
 print(f"Part one: {bag_count}")
 bag_count = g.DFS(d["shiny gold"])
 print(f"Part two: {bag_count}")
+input_file.close()

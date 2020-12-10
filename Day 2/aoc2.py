@@ -31,3 +31,4 @@ for line in lines:
         new_valid_passwords += 1
 
 print(f"Second part: {new_valid_passwords}")
+input_file.close()

@@ -37,3 +37,4 @@ for group in groups:
     unanimous_answers += len(list(filter(lambda x: x, answered)))
 
 print(f"Second part: {unanimous_answers}")
+input_file.close()

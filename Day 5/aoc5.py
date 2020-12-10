@@ -37,3 +37,4 @@ lowestId = seats[0]
 for num in range(lowestId, highestId):
     if not num in seats:
         print(f"Second part: {num}")
+input_file.close()

@@ -12,7 +12,7 @@ for i in range (n - 1):
         if (numbers[i] + numbers[j] == 2020):
             print(f"First part: {numbers[i] * numbers[j]}")
             found_pair = True
-            
+
 for i in range (n - 2):
     if found_triplet:
         break
@@ -21,3 +21,5 @@ for i in range (n - 2):
             if (numbers[i] + numbers[j] + numbers[k] == 2020):
                 print(f"Second part: {numbers[i] * numbers[j] * numbers[k]}")
                 found_triplet = False
+
+input_file.close()

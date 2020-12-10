@@ -97,3 +97,4 @@ for passport in passports:
         corrert_passports += 1
 
 print(f"Second part: {corrert_passports}")
+input_file.close()
